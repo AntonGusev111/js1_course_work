@@ -1,0 +1,10 @@
+Completed:
+1.Разработка API для взаимодействия с Backend
+	createRequest
+	Entity
+	Account
+	Transaction
+	
+
+2.Разработка пользовательского интерфейса
+	i.Кнопка управления боковой колонкой
