@@ -14,8 +14,8 @@ class AsyncForm {
    * */
   constructor(element) {
     this.element = element;
-    if (this.element == 'null'){
-      return console.error('Element is null');
+    if (!this.element){
+      throw new Error('element is null or undefined');
     } 
     this.registerEvents();
   }
@@ -37,9 +37,11 @@ class AsyncForm {
    * }
    * */
   getData() {
-    const form = document.getElementById( this.element.id ),
-    asyncForm = new AsyncForm( form );
-
+    let object = {};
+    for(let item in this.element){
+      object[`${item}`] = this.element[item];
+    }
+    return object;
 
   }
 
@@ -52,6 +54,6 @@ class AsyncForm {
    * данные, полученные из метода getData()
    * */
   submit() {
-
+    this.onSubmit(this.getData)
   }
 }

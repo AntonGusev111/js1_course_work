@@ -13,8 +13,8 @@ class Modal {
    * */
   constructor(element){
     this.element = element;
-    if (this.element =='null'){
-      return console.error('null element');
+    if (!this.element){
+       throw new Error('element is null or undefined');
     }
     this.registerEvents()
   }
@@ -25,14 +25,12 @@ class Modal {
    * (с помощью метода Modal.onClose)
    * */
   registerEvents() {
-    const close = document.querySelectorAll('.transaction')
+    const close = document.querySelectorAll('.modal')
     for (let i = 0; i < close.length; i++){
       close[i].addEventListener('click', (e)=>{
-        this.onClose(e);
-        e.preventDefault();
+        this.onClose();
       })
     }
-
   }
 
   /**
@@ -53,6 +51,6 @@ class Modal {
    * Закрывает окно: удаляет CSS-свойство display
    * */
   close(){
-    this.element.setProperty("display","initial");
+    this.element.setProperty("display","none");
   }
 }
