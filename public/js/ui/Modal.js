@@ -25,10 +25,12 @@ class Modal {
    * (с помощью метода Modal.onClose)
    * */
   registerEvents() {
-    const close = document.querySelectorAll('.modal')
+    const close = document.querySelectorAll(".modal")
     for (let i = 0; i < close.length; i++){
       close[i].addEventListener('click', (e)=>{
-        this.onClose();
+        if(e.target.parentElement.getAttribute('data-dismiss') == 'modal' || e.target.getAttribute('data-dismiss') == 'modal'){
+          this.onClose();
+        }
       })
     }
   }
@@ -45,12 +47,12 @@ class Modal {
    * со значением «block»
    * */
   open() {
-    this.element.setProperty("display","block", "important");
+    this.element.style.display = "block";
   }
   /**
    * Закрывает окно: удаляет CSS-свойство display
    * */
   close(){
-    this.element.setProperty("display","none");
+    this.element.style.display = "none";
   }
 }

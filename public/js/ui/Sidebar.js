@@ -39,28 +39,31 @@ class Sidebar {
    * выходу устанавливает App.setState( 'init' )
    * */
   static initAuthLinks() {
-    const menu = document.getElementsByClassName('sidebar-menu');
-    let windowName = '';
-    
-    for (let item = 0; item < menu.length; item++){
-      menu[item].addEventListener('click', (e) =>{
-        if(e.target.parentElement.className =='menu-item menu-item_login' || e.target.parentElement.parentElement.className =='menu-item menu-item_login'){
-          windowName = 'login'
-        }
-        if(e.target.parentElement.className =='menu-item menu-item_register' || e.target.parentElement.parentElement.className =='menu-item menu-item_register'){
-          windowName = 'register'
-        }
-        if(e.target.parentElement.className =='menu-item menu-item_logout' || e.target.parentElement.parentElement.className =='menu-item menu-item_logout'){
-          if(User.logout()){
-            App.setState('init')
-          }
-        }
-        if (windowName != ''){
-          let windowObject = App.getModal(windowName);
-          let modal = new Modal(windowObject.element.style);
-          modal.open();
-        }
-      })
-    }
+    const login = document.querySelector('.menu-item_login');
+    const reg =  document.querySelector('.menu-item_register');
+    const logout = document.querySelector('.menu-item_logout');
+
+    login.addEventListener('click',(e)=>{
+
+      let windowObject = App.getModal('login');
+      let modal = new Modal(windowObject.element);
+      modal.open();
+    });
+
+    reg.addEventListener('click',(e)=>{
+
+      let windowObject = App.getModal('register');
+      let modal = new Modal(windowObject.element);
+      modal.open();
+    });
+
+    logout.addEventListener('click',(e)=>{
+      if(User.logout()){
+        let windowObject = App.getModal('init');
+       let modal = new Modal(windowObject.element);
+        modal.open();
+      }
+    });
+
   }
 }
