@@ -23,6 +23,7 @@ const createRequest = (options = {}) => {
     xhr.responseType = 'json';
     xhr.onload = function () {
             options.callback(xhr.response)
+            
       };
       xhr.onerror = (e) => {
         console.log('error', e);

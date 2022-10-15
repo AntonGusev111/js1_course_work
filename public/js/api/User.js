@@ -64,14 +64,9 @@ class User {
       url: this.URL + '/login',
       method: 'POST',
       responseType: 'json',
-      data,
-      callback: (err, response) => {
-        if (response && response.user) {
-          this.setCurrent(response.user);
-        }
-        callback(err, response);
-      }
-    });
+      data: data,
+      callback: callback
+      })
   }
 
   /**
@@ -85,14 +80,8 @@ class User {
       url: this.URL + '/register',
       method: 'POST',
       responseType: 'json',
-      data,
-      callback: (err,response) => {
-        if (response && response.success){
-          this.setCurrent(response.user)
-        }
-        callback(err, response);
-      }
-    })
+      data:data,
+      callback: callback});
 
   }
 
@@ -105,12 +94,7 @@ class User {
       url: this.URL + '/logout',
       method: 'POST',
       responseType: 'json', 
-      callback: (err, response) => {
-        if (response && response.success){
-          this.unsetCurrent;
-        }
-        callback(err, response);
-      }
+      callback: callback,
     })
   }
 }

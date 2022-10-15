@@ -14,8 +14,14 @@ class AccountsWidget {
    * необходимо выкинуть ошибку.
    * */
   constructor( element ) {
-
+    this.element = element;
+    if (!this.element){
+      throw new Error('element is null or undefined');
+    } 
+    this.registerEvents();
+    this.update();
   }
+
 
   /**
    * При нажатии на .create-account открывает окно

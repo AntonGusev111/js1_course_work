@@ -45,24 +45,24 @@ class Sidebar {
 
     login.addEventListener('click',(e)=>{
 
-      let windowObject = App.getModal('login');
-      let modal = new Modal(windowObject.element);
-      modal.open();
+      App.getModal('login').open();
+
     });
 
     reg.addEventListener('click',(e)=>{
 
-      let windowObject = App.getModal('register');
-      let modal = new Modal(windowObject.element);
-      modal.open();
+      App.getModal('register').open();
+      
     });
 
     logout.addEventListener('click',(e)=>{
-      if(User.logout()){
-        let windowObject = App.getModal('init');
-       let modal = new Modal(windowObject.element);
-        modal.open();
-      }
+      User.logout(function (response){
+        if(response.success){
+          App.setState( 'init' )
+        } else{
+          console.log(response.error)
+        }
+      });
     });
 
   }
