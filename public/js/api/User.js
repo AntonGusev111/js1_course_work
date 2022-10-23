@@ -12,8 +12,8 @@ class User {
    * локальном хранилище.
    * */
   static setCurrent(user) {
-      const currentUser =  JSON.stringify({'id':user.id, 'name':user.name});
-      localStorage.setItem('user',currentUser);
+    const currentUser =  JSON.stringify({'id':user.id, 'name':user.name});
+    localStorage.setItem('user',currentUser);
   }
 
   /**
@@ -42,14 +42,7 @@ class User {
       url: this.URL + '/current',
       method: 'GET',
       responseType: 'json',
-      callback: (err, response) => {
-        if (response && response.user){
-          this.setCurrent(response.user);
-        } else {
-          this.unsetCurrent();
-        }
-        callback(err, response);
-      }
+      callback: callback,
     })
   }
 
@@ -65,11 +58,14 @@ class User {
       method: 'POST',
       responseType: 'json',
       data: data,
+      current: (user) =>{
+        this.setCurrent(user);
+      },
       callback: callback
       })
   }
 
-  /**
+  /**User.setCurrent(xhr.response.user)
    * Производит попытку регистрации пользователя.
    * После успешной авторизации необходимо
    * сохранить пользователя через метод
@@ -81,6 +77,9 @@ class User {
       method: 'POST',
       responseType: 'json',
       data:data,
+      current: (user) =>{
+        this.setCurrent(user);
+      },
       callback: callback});
 
   }
@@ -93,8 +92,15 @@ class User {
     createRequest({
       url: this.URL + '/logout',
       method: 'POST',
-      responseType: 'json', 
+      responseType: 'json',
+      current: (user) =>{
+        User.unsetCurrent();
+      },
       callback: callback,
     })
   }
 }
+
+
+
+

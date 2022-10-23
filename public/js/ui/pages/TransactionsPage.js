@@ -11,6 +11,12 @@ class TransactionsPage {
    * через registerEvents()
    * */
   constructor( element ) {
+    if (!element){
+      throw new Error('element is null')
+    } else {
+      this.element = element;
+      this.registerEvents();
+    }
 
   }
 
@@ -18,7 +24,8 @@ class TransactionsPage {
    * Вызывает метод render для отрисовки страницы
    * */
   update() {
-
+    
+    this.render({"account_id":User.current().id})
   }
 
   /**
@@ -28,6 +35,16 @@ class TransactionsPage {
    * TransactionsPage.removeAccount соответственно
    * */
   registerEvents() {
+    const dellAcc = document.querySelector('.remove-account');
+    const dellTrans = document.querySelectorAll('.transaction__remove');
+
+    dellAcc.addEventListener('click', (e)=>{
+      this.removeAccount()
+    })
+
+    //dellTrans.addEventListener('click', (e) =>{
+      //this.removeTransaction(e)
+    //})
 
   }
 
@@ -61,6 +78,18 @@ class TransactionsPage {
    * в TransactionsPage.renderTransactions()
    * */
   render(options){
+    if (options){
+      Account.get(options.account_id, (response)=>{
+        if(response.success == true){
+          this.renderTitle(response.data.name)
+          Transaction.list(options.account_id, (response)=>{
+            if(response.success == true){
+              this.renderTransactions(response);
+            };
+          })
+        }
+      })   
+    }
 
   }
 
@@ -70,6 +99,9 @@ class TransactionsPage {
    * Устанавливает заголовок: «Название счёта»
    * */
   clear() {
+    this.renderTransactions([]);
+    this.renderTitle('Название счета');
+    //lastoption??
 
   }
 
@@ -77,7 +109,8 @@ class TransactionsPage {
    * Устанавливает заголовок в элемент .content-title
    * */
   renderTitle(name){
-
+    const title = document.querySelector('.content-title');
+    title.innerText=name;
   }
 
   /**
@@ -85,7 +118,8 @@ class TransactionsPage {
    * в формат «10 марта 2019 г. в 03:20»
    * */
   formatDate(date){
-
+    const page = new TransactionsPage( document.getElementById( '#content' ));
+    page.formatDate( '2019-03-10 03:20:41' );
   }
 
   /**

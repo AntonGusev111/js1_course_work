@@ -12,9 +12,10 @@ class UserWidget {
    * необходимо выкинуть ошибку.
    * */
   constructor(element){
-    this.element = element;
-    if (!this.element){
-      throw "Element is undefined"
+    if (!element){
+      new Error("Element is undefined")
+    } else {
+      this.element = element;
     }
 
   }
