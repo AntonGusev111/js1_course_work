@@ -14,10 +14,8 @@ class UserWidget {
   constructor(element){
     if (!element){
       new Error("Element is undefined")
-    } else {
-      this.element = element;
-    }
-
+    } 
+    this.element = element;
   }
 
   /**

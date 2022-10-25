@@ -35,7 +35,7 @@ class AccountsWidget {
     crAccountBtn.addEventListener('click', (e)=>{
       if (e.target.className == 'create-account label label-success'){
         App.getModal('createAccount').open();
-      } else {
+      } else if(e.target.closest('li').className == 'account') {
         this.onSelectAccount(e.target);
       }
     })

@@ -16,9 +16,8 @@ class AsyncForm {
     this.element = element;
     if (!this.element){
       throw new Error('element is null or undefined');
-    } else{
+    } 
     this.registerEvents();
-      }
   }
 
   /**

@@ -22,11 +22,7 @@ const createRequest = (options = {}) => {
 
     xhr.responseType = 'json';
     xhr.onload = function () {
-       if(options.current){
-        options.current(xhr.response.user)
-       };
-        options.callback(xhr.response);
-            
+        options.callback(xhr.response);   
       };
       xhr.onerror = (e) => {
         console.log('error', e);

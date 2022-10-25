@@ -163,6 +163,11 @@
       "name": "teacher",
       "user_id": "1evlyu1pkl9l6xsp2",
       "id": "1evlyu990l9lobdrz"
+    },
+    {
+      "name": "rtrtgrtg2323",
+      "user_id": "1evlyu1pkl9l6xsp2",
+      "id": "1evlyuehcl9o8vffc"
     }
   ],
   "transactions": [
@@ -561,6 +566,60 @@
       "account_id": "1evlyuwkl9l7l7d5",
       "user_id": "1evlyu1pkl9l6xsp2",
       "created_at": "2022-10-23T19:57:28.377Z"
+    },
+    {
+      "id": "1evlyu3swl9o8v2ma",
+      "type": "income",
+      "name": "news",
+      "sum": 213,
+      "account_id": "1evlyuagsl9l7mjgt",
+      "user_id": "1evlyu1pkl9l6xsp2",
+      "created_at": "2022-10-25T13:29:21.921Z"
+    },
+    {
+      "id": "1evlyuetwl9o8xyun",
+      "type": "income",
+      "name": "Anton Gusev",
+      "sum": 12,
+      "account_id": "1evlyuehcl9o8vffc",
+      "user_id": "1evlyu1pkl9l6xsp2",
+      "created_at": "2022-10-25T13:31:37.006Z"
+    },
+    {
+      "id": "1evlyu928l9ocycnp",
+      "type": "income",
+      "name": "sefsef",
+      "sum": 2323,
+      "account_id": "1evlyu304l9lff3uq",
+      "user_id": "1evlyu1pkl9l6xsp2",
+      "created_at": "2022-10-25T15:23:53.364Z"
+    },
+    {
+      "id": "1evlyuem4l9ocyjyc",
+      "type": "expense",
+      "name": "Anton",
+      "sum": 11,
+      "account_id": "1evlyu2qol9lame4w",
+      "user_id": "1evlyu1pkl9l6xsp2",
+      "created_at": "2022-10-25T15:24:02.819Z"
+    },
+    {
+      "id": "1evlyua1cl9om04ob",
+      "type": "income",
+      "name": "news",
+      "sum": 55555,
+      "account_id": "1evlyuc6cl9l7j99j",
+      "user_id": "1evlyu1pkl9l6xsp2",
+      "created_at": "2022-10-25T19:37:12.874Z"
+    },
+    {
+      "id": "1evlyublgl9op80kz",
+      "type": "income",
+      "name": "Anton",
+      "sum": 12,
+      "account_id": "1evlyuewgl9l71l32",
+      "user_id": "1evlyu1pkl9l6xsp2",
+      "created_at": "2022-10-25T21:07:19.666Z"
     }
   ]
 }
