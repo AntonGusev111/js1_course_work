@@ -105,11 +105,6 @@
       "id": "1evlyubzol9l6x9t9"
     },
     {
-      "name": "news",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "id": "1evlyuewgl9l71l32"
-    },
-    {
       "name": "5588858",
       "user_id": "1evlyu1pkl9l6xsp2",
       "id": "1evlyuc6cl9l7j99j"
@@ -120,19 +115,9 @@
       "id": "1evlyuwkl9l7l7d5"
     },
     {
-      "name": "uk,i",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "id": "1evlyubzcl9l7lvgr"
-    },
-    {
       "name": "12345678",
       "user_id": "1evlyu1pkl9l6xsp2",
       "id": "1evlyuagsl9l7mjgt"
-    },
-    {
-      "name": "tag",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "id": "1evlyuetgl9lalzrt"
     },
     {
       "name": "tag1",
@@ -143,16 +128,6 @@
       "name": "ujujujuj",
       "user_id": "1evlyu1pkl9l6xsp2",
       "id": "1evlyu1tsl9ldpfxe"
-    },
-    {
-      "name": "gtr",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "id": "1evlyu3mkl9ldu27g"
-    },
-    {
-      "name": "2782724",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "id": "1evlyu67cl9ler7u5"
     },
     {
       "name": "789",
@@ -307,15 +282,6 @@
       "user_id": "1"
     },
     {
-      "id": "1evlyufd0l9lmvfa0",
-      "type": "income",
-      "name": "Anton",
-      "sum": 12,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:38:14.423Z"
-    },
-    {
       "id": "1evlyu2xsl9lmx1ks",
       "type": "income",
       "name": "Anton Gusev",
@@ -323,24 +289,6 @@
       "account_id": "1evlyuc6cl9l7j99j",
       "user_id": "1evlyu1pkl9l6xsp2",
       "created_at": "2022-10-23T17:39:29.979Z"
-    },
-    {
-      "id": "1evlyu2kwl9lnadpi",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 11,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:49:52.229Z"
-    },
-    {
-      "id": "1evlyueeol9lnah7g",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 11,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:49:56.763Z"
     },
     {
       "id": "1evlyuas8l9lnatdf",
@@ -352,33 +300,6 @@
       "created_at": "2022-10-23T17:50:12.530Z"
     },
     {
-      "id": "1evlyuf7wl9lnb8wx",
-      "type": "income",
-      "name": "Anton",
-      "sum": 12,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:50:32.672Z"
-    },
-    {
-      "id": "1evlyu8r8l9lnbgpo",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 12,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:50:42.779Z"
-    },
-    {
-      "id": "1evlyufkcl9lnd1xu",
-      "type": "income",
-      "name": "Anton",
-      "sum": 2323,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:51:56.945Z"
-    },
-    {
       "id": "1evlyu1w0l9lndxkz",
       "type": "income",
       "name": "Anton",
@@ -386,51 +307,6 @@
       "account_id": "1evlyuc6cl9l7j99j",
       "user_id": "1evlyu1pkl9l6xsp2",
       "created_at": "2022-10-23T17:52:37.954Z"
-    },
-    {
-      "id": "1evlyu8bsl9lneei1",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 12,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:52:59.880Z"
-    },
-    {
-      "id": "1evlyuetkl9lnevgq",
-      "type": "income",
-      "name": "Anton",
-      "sum": 12,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:53:21.865Z"
-    },
-    {
-      "id": "1evlyu3ukl9lnf8rv",
-      "type": "income",
-      "name": "Anton",
-      "sum": 12,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:53:39.114Z"
-    },
-    {
-      "id": "1evlyua74l9lnfj5p",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 12,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:53:52.572Z"
-    },
-    {
-      "id": "1evlyucg0l9lnjs0h",
-      "type": "income",
-      "name": "Anton Gusev",
-      "sum": 12,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T17:57:10.672Z"
     },
     {
       "id": "1evlyu1a4l9lnk7lc",
@@ -460,51 +336,6 @@
       "created_at": "2022-10-23T17:58:56.091Z"
     },
     {
-      "id": "1evlyubtkl9lnou7m",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 55555,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T18:01:06.801Z"
-    },
-    {
-      "id": "1evlyu8e0l9lnp2bi",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 555555555,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T18:01:17.309Z"
-    },
-    {
-      "id": "1evlyu6pcl9lnp9yi",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 5555555555555555,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T18:01:27.209Z"
-    },
-    {
-      "id": "1evlyu1dsl9lnq11a",
-      "type": "income",
-      "name": "Anton",
-      "sum": 123213123,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T18:02:02.301Z"
-    },
-    {
-      "id": "1evlyuf3gl9lnq8br",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 123213213,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T18:02:11.750Z"
-    },
-    {
       "id": "1evlyuf14l9lnqh5t",
       "type": "income",
       "name": "Anton",
@@ -523,15 +354,6 @@
       "created_at": "2022-10-23T18:02:30.531Z"
     },
     {
-      "id": "1evlyub4sl9lnqwvs",
-      "type": "income",
-      "name": "news",
-      "sum": 5555556111164430,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T18:02:43.575Z"
-    },
-    {
       "id": "1evlyudskl9locodz",
       "type": "income",
       "name": "tag",
@@ -548,15 +370,6 @@
       "account_id": "1evlyu990l9lobdrz",
       "user_id": "1evlyu1pkl9l6xsp2",
       "created_at": "2022-10-23T18:19:52.508Z"
-    },
-    {
-      "id": "1evlyufdgl9lru487",
-      "type": "income",
-      "name": "news",
-      "sum": 2323,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-23T19:57:11.526Z"
     },
     {
       "id": "1evlyuf0cl9lruh8a",
@@ -595,15 +408,6 @@
       "created_at": "2022-10-25T15:23:53.364Z"
     },
     {
-      "id": "1evlyuem4l9ocyjyc",
-      "type": "expense",
-      "name": "Anton",
-      "sum": 11,
-      "account_id": "1evlyu2qol9lame4w",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-25T15:24:02.819Z"
-    },
-    {
       "id": "1evlyua1cl9om04ob",
       "type": "income",
       "name": "news",
@@ -611,15 +415,6 @@
       "account_id": "1evlyuc6cl9l7j99j",
       "user_id": "1evlyu1pkl9l6xsp2",
       "created_at": "2022-10-25T19:37:12.874Z"
-    },
-    {
-      "id": "1evlyublgl9op80kz",
-      "type": "income",
-      "name": "Anton",
-      "sum": 12,
-      "account_id": "1evlyuewgl9l71l32",
-      "user_id": "1evlyu1pkl9l6xsp2",
-      "created_at": "2022-10-25T21:07:19.666Z"
     }
   ]
 }

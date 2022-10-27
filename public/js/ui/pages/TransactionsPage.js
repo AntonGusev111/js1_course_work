@@ -59,10 +59,9 @@ class TransactionsPage {
    * для обновления приложения
    * */
   removeAccount() {
-    if (this.lastOption){
-      if(confirm('Delete?')){
-        Account.remove(this.lastOption.account_id, (response) => {
-          console.log(response)
+   // if (this.lastOption){
+      if(confirm('Delete?') || this.lastOption){
+        Account.remove({id:this.lastOption.account_id}, (response) => {
           if(response.success == true){
             App.updateWidgets();
             App.updateForms();
@@ -70,7 +69,7 @@ class TransactionsPage {
         });
         this.clear();
       }
-    }
+    //}
   }
 
   /**
@@ -81,7 +80,7 @@ class TransactionsPage {
    * */
   removeTransaction( id ) {
     if(confirm('Вы действительно хотите удалить эту транзакцию?')){
-      Transaction.remove(id, (response)=>{
+      Transaction.remove({id:id}, (response)=>{
         if(response.success == true){
           App.update();
         };
@@ -103,9 +102,10 @@ class TransactionsPage {
         if(response.success == true){
           this.renderTitle(response.data.name)
         }
-        Transaction.list(options.account_id, (response)=>{
+        
+        Transaction.list(options, (response)=>{
           if(response.success == true){
-            this.renderTransactions(response);
+            this.renderTransactions(response.data);
           };
         })
       })   
@@ -183,6 +183,7 @@ class TransactionsPage {
     const transactions = document.querySelector('.content');
     let htmlList = [];
     for (let item of data){
+
       htmlList.push(this.getTransactionHTML(item))
     }
     transactions.innerHTML = htmlList
